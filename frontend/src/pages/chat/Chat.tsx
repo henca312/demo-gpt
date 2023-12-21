@@ -590,8 +590,9 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>apo GPT</h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Dieser ChatBot beantwortet alle Fragen rund um die 
+Prozesse der apoDirect</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -625,7 +626,7 @@ const Chat = () => {
                                         <div className={styles.chatMessageGpt}>
                                             <Answer
                                                 answer={{
-                                                    answer: "Generating answer...",
+                                                    answer: "Generiere die Antwort...",
                                                     citations: []
                                                 }}
                                                 onCitationClicked={() => null}
@@ -649,7 +650,7 @@ const Chat = () => {
                                     onKeyDown={e => e.key === "Enter" || e.key === " " ? stopGenerating() : null}
                                     >
                                         <SquareRegular className={styles.stopGeneratingIcon} aria-hidden="true"/>
-                                        <span className={styles.stopGeneratingText} aria-hidden="true">Stop generating</span>
+                                        <span className={styles.stopGeneratingText} aria-hidden="true">Stoppe die Ausgabe</span>
                                 </Stack>
                             )}
                             <Stack>
