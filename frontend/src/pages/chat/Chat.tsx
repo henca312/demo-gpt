@@ -590,9 +590,9 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>apo GPT</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Demo GPT</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Dieser ChatBot beantwortet alle Fragen rund um die 
-Prozesse der apoDirect</h2>
+Prozesse einer Bank</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
