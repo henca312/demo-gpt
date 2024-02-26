@@ -210,8 +210,7 @@ const Chat = () => {
             
         } catch ( e )  {
             if (!abortController.signal.aborted) {
-                let errorMessage = "Ein Fehler ist aufgetreten. Bitte versuche es erneut. Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den Site-Administrator.
-                ";
+                let errorMessage = "Ein Fehler ist aufgetreten. Bitte versuche es erneut. Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den Site Administrator.";
                 if (result.error?.message) {
                     errorMessage = result.error.message;
                 }
