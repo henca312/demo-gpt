@@ -60,7 +60,7 @@ const Layout = () => {
 
     useEffect(() => {
         if (copyClicked) {
-            setCopyText("Copied URL");
+            setCopyText("URL wurde kopiert");
         }
     }, [copyClicked]);
 
@@ -86,7 +86,7 @@ const Layout = () => {
                             {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && 
                                 <HistoryButton onClick={handleHistoryClick} text={appStateContext?.state?.isChatHistoryOpen ? "Ausblenden Chat Historie" : "Zeige Chat Historie"}/>    
                             }
-                            <ShareButton onClick={handleShareClick} text="Teilen"/>
+                            <ShareButton onClick={handleShareClick}/>
 
                     </Stack>
 
