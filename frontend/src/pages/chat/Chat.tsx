@@ -590,7 +590,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Demo GPT</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>Demo Bank GPT </h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Dieser ChatBot beantwortet alle Fragen rund um die 
 Prozesse der Demo Bank</h2>
                             </Stack>
