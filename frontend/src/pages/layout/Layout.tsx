@@ -36,7 +36,7 @@ const shareButtonStyles: ICommandBarStyles & IButtonStyles = {
 const Layout = () => {
     const [isSharePanelOpen, setIsSharePanelOpen] = useState<boolean>(false);
     const [copyClicked, setCopyClicked] = useState<boolean>(false);
-    const [copyText, setCopyText] = useState<string>("Copy URL");
+    const [copyText, setCopyText] = useState<string>("Link kopieren");
     const appStateContext = useContext(AppStateContext)
 
     const handleShareClick = () => {
@@ -46,7 +46,7 @@ const Layout = () => {
     const handleSharePanelDismiss = () => {
         setIsSharePanelOpen(false);
         setCopyClicked(false);
-        setCopyText("Copy URL");
+        setCopyText("Link kopieren");
     };
 
     const handleCopyClick = () => {
@@ -86,7 +86,8 @@ const Layout = () => {
                             {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && 
                                 <HistoryButton onClick={handleHistoryClick} text={appStateContext?.state?.isChatHistoryOpen ? "Ausblenden Chat Historie" : "Zeige Chat Historie"}/>    
                             }
-                            <ShareButton onClick={handleShareClick} />
+                            <ShareButton onClick={handleShareClick} text="Teilen"/>
+
                     </Stack>
 
                 </Stack>
@@ -111,7 +112,7 @@ const Layout = () => {
                       }]
                 }}
                 dialogContentProps={{
-                    title: "Teilen",
+                    title: "Link teilen",
                     showCloseButton: true
                 }}
             >
