@@ -12,7 +12,7 @@ export interface GroupedChatHistory {
 }
 
 const groupByMonth = (entries: Conversation[]) => {
-    const groups: GroupedChatHistory[] = [{ month: "Recent", entries: [] }];
+    const groups: GroupedChatHistory[] = [{ month: "Verlauf", entries: [] }];
     const currentDate = new Date();
   
     entries.forEach((entry) => {
@@ -70,7 +70,7 @@ const ChatHistoryList: React.FC<ChatHistoryListProps> = () => {
         return <Stack horizontal horizontalAlign='center' verticalAlign='center' style={{ width: "100%", marginTop: 10 }}>
             <StackItem>
                 <Text style={{ alignSelf: 'center', fontWeight: '400', fontSize: 14 }}>
-                    <span>No chat history.</span>
+                    <span>Keine Chat Historie.</span>
                 </Text>
             </StackItem>
         </Stack>

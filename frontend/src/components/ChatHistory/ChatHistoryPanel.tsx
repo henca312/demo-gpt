@@ -179,8 +179,8 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                 modalProps={modalProps}
             >
                 <DialogFooter>
-                {!clearingError && <PrimaryButton onClick={onClearAllChatHistory} disabled={clearing} text="Clear All" />}
-                <DefaultButton onClick={onHideClearAllDialog} disabled={clearing} text={!clearingError ? "Cancel" : "Close"} />
+                {!clearingError && <PrimaryButton onClick={onClearAllChatHistory} disabled={clearing} text="Alles löschen" />}
+                <DefaultButton onClick={onHideClearAllDialog} disabled={clearing} text={!clearingError ? "Abbrechen" : "Schließen"} />
                 </DialogFooter>
             </Dialog>
         </section>
